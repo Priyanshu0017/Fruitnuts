@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans+JP:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    font-family: "Roboto", sans-serif;
+}
+
+em {
+    font-style: normal;
+}
+
+.maincontainer {
+    height: auto;
+    width: 100%;
+}
+
+.nav1 {
+    padding-inline: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.nav1 img {
+    width: 24%;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: center;
+}
+
+.nav2 ul {
+    width: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 45px;
+    padding-right: 30px;
+}
+
+.nav2 ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 1.1em;
+
+    &:hover {
+        color: gray;
+    }
+}
+
+.search {
+    width: 15%;
+    height: 50px;
+    padding-inline: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(221, 221, 221);
+    margin-right: 20px;
+
+}
+
+.search i {
+    font-size: 1.4em;
+    color: gray;
+}
+
+.search input {
+    border: none;
+}
+
+input:focus {
+    visibility: hidden;
+}
+
+.nav3 {
+    display: flex;
+    margin-top: 15px;
+    justify-content: end;
+    padding-inline: 20px;
+}
+
+.nav3 button {
+    width: 10%;
+    font-size: 1.2em;
+    margin-right: 20px;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+        color: gray;
+    }
+}
+
+.nav3 i {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.heading {
+    padding-top: 110px;
+    font-size: 1.8em;
+    font-weight: 200;
+    color: rgb(33, 33, 33);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 55px;
+}
+
+.herosection {
+    padding-inline: 200px;
+    padding-bottom: 150px;
+}
+
+.products {
+    background-color: rgb(238, 238, 238);
+    padding-top: 30px;
+    padding-inline: 28px;
+}
+
+.products img {
+    width: 100%;
+}
+
+.product1 {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: repeat(3, 600px);
+    justify-content: space-between;
+}
+
+.box {
+    padding-top: 140px;
+}
+
+.box:first-child {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.box:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.box:nth-child(3) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.box:nth-child(4) {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.box:nth-child(5) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.box:nth-child(6) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.box:nth-child(7) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.box:nth-child(8) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.box:nth-child(9) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.box:nth-child(10) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.box:nth-child(11) {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.box:nth-child(12) {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+.box button {
+    width: 90px;
+    height: 30px;
+    margin-bottom: 40px;
+    margin-left: 18px;
+    font-family: "Playfair Display", serif;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.box a {
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-align: center;
+
+    &:hover {
+        color: gray;
+    }
+}
+
+.box img {
+    margin-bottom: 10px;
+
+}
+
+.box h4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.buynow {
+    padding-block: 50px;
+    padding-inline: 110px;
+    padding-left: 280px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buynow button {
+    height: 40px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: "Playfair Display", serif;
+
+    &:hover {
+        background-color: gray;
+    }
+}
+
+.endsec {
+    padding-inline: 200px;
+    background-color: rgb(238, 238, 238);
+    padding-top: 80px;
+}
+
+.list ul {
+    font-size: 1.2em;
+    line-height: 30px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.list ul:first-child {
+    list-style: none;
+}
+
+.list ul:last-child {
+    list-style: none;
+}
+
+.pic {
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.left img {
+    width: 20%;
+    margin-bottom: 60px;
+}
+
+.left img:nth-child(2) {
+    width: 50%;
+}
+
+.right img {
+    width: 70%;
+    margin-bottom: 70px;
+}
+
+.hr {
+    border-bottom: 2px solid rgb(211, 208, 208);
+}
+
+.endhead {
+    padding-block: 40px;
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    font-size: 1.2em;
+    padding-bottom: 62px;
+}
+
+.whatsapp {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(238, 238, 238);
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    border-radius: 10px;
+}
+
+.top {
+    font-size: 1.2em;
+    padding-inline: 20px;
+    padding-block: 10px;
+    background-color: rgb(220, 248, 198);
+    border-radius: 10px 10px 0 0;
+}
+
+.mid {
+    width: 88%;
+    font-size: 1.2em;
+    padding-block: 10px;
+    padding-inline: 10px;
+    background-color: rgb(220, 248, 198);
+    margin-left: 15px;
+    line-height: 30px;
+
+}
+
+.end {
+    padding-inline: 20px;
+    padding-block: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.end button {
+    height: 40px;
+    width: 220px;
+    border-radius: 50px;
+    background-color: rgb(37, 211, 102);
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    border: none;
+}
+
+.end p {
+    display: flex;
+    justify-content: center;
+    font-size: 0.7em;
+}
+
+.endline {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(61, 156, 210);
+    font-size: 1.2em;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(74, 223, 88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2em;
+    border-radius: 10px;
+    position: relative;
+    top: -30px;
+}
+.nav1 span{
+    display: none;
+}
+#p11{
+    display: none;
+}
+#p22{
+    display: none;
+}
+@media (max-width:768px) {
+    .nav1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav1 img{
+        width: 40%;
+    }
+    .nav1 span{
+        display: inline;
+    }
+    .nav1 span i{
+        font-size: 1.3em;
+        margin-left: 5px;
+    }
+    .nav2{
+        display: none;
+    }
+    .nav3{
+        display: none;
+    }
+    .whatsapp{
+        display: none;
+    }
+    .heading h1{
+        font-size: 1.8em;
+    }
+    .herosection{
+        padding-inline: 20px;
+    }
+
+    .product1 {
+        display: grid;
+        grid-template-columns: repeat(1, 40%);
+        grid-template-rows: repeat(12, 600px);
+        justify-content: center;
+    }
+    
+    
+    .box:first-child {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .box:nth-child(2) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .box:nth-child(3) {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .box:nth-child(4) {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+    .box:nth-child(5) {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    
+    .box:nth-child(6) {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    
+    .box:nth-child(7) {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    
+    .box:nth-child(8) {
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    
+    .box:nth-child(9) {
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
+    
+    .box:nth-child(10) {
+        grid-column: 1/2;
+        grid-row: 10/11;
+    }
+    
+    .box:nth-child(11) {
+        grid-column: 1/2;
+        grid-row: 11/12;
+    }
+    
+    .box:nth-child(12) {
+        grid-column: 1/2;
+        grid-row: 12/13;
+    }
+
+    .buynow {
+        padding-block: 50px;
+        padding-inline: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #p11{
+        display: inline;
+        font-size: .8em;
+        margin-bottom: 20px;
+    }
+    #p22{
+        display: inline;
+        font-size: .8em;
+        margin-top: 20px;
+    }
+    .list ul li{
+        font-size: .8em;
+        line-height: 20px;
+    }
+    .list{
+        flex-direction: column;
+    }
+    .endsec{
+        padding-inline: 30px;
+    }
+    #ul1{
+        display: none;
+    }
+    #ul2{
+        display: none;
+    }
+    .left img {
+        width: 20%;
+        margin-bottom: 20px;
+    }
+    .right img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .pic {
+        display: flex;
+        padding-bottom: 20px;
+    }
+
+    .endhead{
+        font-size: 0.8em;
+        padding-bottom: 100px;
+    }
+}
